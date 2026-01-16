@@ -1,19 +1,26 @@
 <header class="header">
-  <div class="container">
+  <div class="container header__container">
+    <a href="/" class="logo">
+      <span class="logo__icon"></span>
+      <span class="logo__text">Intell-Corex</span>
+    </a>
+
     <nav class="nav">
-      <a class="nav-logo" href="./index.html" aria-label="Site logo">
-        <svg class="nav-logo-icon" width="100" height="30">
-          <use href="{=$icon-path}"></use>
-        </svg>
-      </a>
-      <ul class="nav-list">
-        <li class="nav-item">
-          <a class="nav-link {=$highlight-act}" href="./page-2.html">Page 2</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link {=$highlight-curr}" href="./page-3.html">Page 3</a>
-        </li>
+      <ul class="nav__list">
+        <li><a href="#hero" class="nav__link">Главная</a></li>
+        <li><a href="#features" class="nav__link">Технологии</a></li>
+        <li><a href="#solutions" class="nav__link">Решения</a></li>
+        <li><a href="#blog" class="nav__link">Блог</a></li>
       </ul>
     </nav>
+
+    <a href="#contact" class="btn btn--primary header__btn">
+      <span>Связаться</span>
+      <i data-lucide="arrow-up-right"></i>
+    </a>
+
+    <button class="burger" aria-label="Menu">
+      <span></span>
+    </button>
   </div>
 </header>
